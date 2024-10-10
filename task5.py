@@ -1,10 +1,4 @@
-k = 1
-N = 133 * k + 125
-numbers = []
 out = []
-while N // 100000 == 0:
-    numbers.append(str(N))
-    if N // 10000 != 0:
-        out.append(str(N))
-    N += 133
+for i in range(10_000, 100_000):
+    if i % 133 == 125 and i % 134 == 111: out.append(str(i))
 print(f'Искомые числа: {', '.join(out)}')
