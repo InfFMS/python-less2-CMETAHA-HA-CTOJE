@@ -9,4 +9,3 @@ elif abs(y_second - y_first) == 2 and abs(x_second - x_first) == 1:
     print('YES')
 else:
     print('NO')
-    
